@@ -1,0 +1,76 @@
+//Style a web page using advanced CSS: Box model, background imaged, borders, margins, and padding.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advanced CSS Styling</title>
+
+    <style>
+        /* Body styling with background image */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-image: url("https://via.placeholder.com/1200x600");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        /* Container demonstrating box model */
+        .container {
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0.9);
+
+            /* Box Model */
+            padding: 20px;          /* Inner space */
+            border: 4px solid navy; /* Border */
+            margin: 50px auto;      /* Outer space */
+
+            box-sizing: border-box;
+        }
+
+        /* Heading styling */
+        h1 {
+            text-align: center;
+            color: darkblue;
+            border-bottom: 2px solid gray;
+            padding-bottom: 10px;
+        }
+
+        /* Paragraph styling */
+        p {
+            text-align: justify;
+            border: 2px dashed gray;
+            padding: 10px;
+            margin-top: 15px;
+        }
+
+        /* Button styling */
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            border: 2px solid black;
+            background-color: lightblue;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Advanced CSS</h1>
+
+        <p>
+            This webpage demonstrates advanced CSS concepts such as the box model,
+            background images, borders, margins, and padding.
+        </p>
+
+        <button>Click Me</button>
+    </div>
+
+</body>
+</html>

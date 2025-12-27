@@ -1,0 +1,72 @@
+// Create and invoke user-defined functions in JavaScript; use var, let, and const for scope demonstration.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Functions and Scope in JavaScript</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .box {
+            width: 450px;
+            margin: 30px auto;
+            padding: 20px;
+            border: 1px solid black;
+        }
+        p {
+            background-color: #f2f2f2;
+            padding: 8px;
+        }
+        button {
+            padding: 6px 12px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>JavaScript Functions & Scope</h2>
+
+    <p id="funcOutput"></p>
+    <p id="scopeOutput"></p>
+
+    <button onclick="showResult()">Run Code</button>
+</div>
+
+<script>
+    // ===== User-Defined Function =====
+    function addNumbers(a, b) {
+        return a + b;
+    }
+
+    // ===== Function Invocation =====
+    function showResult() {
+        var sum = addNumbers(10, 20);
+        document.getElementById("funcOutput").innerHTML =
+            "Function Result (10 + 20): " + sum;
+
+        scopeDemo();
+    }
+
+    // ===== Scope Demonstration =====
+    function scopeDemo() {
+
+        if (true) {
+            var x = 10;     // Function scope
+            let y = 20;     // Block scope
+            const z = 30;   // Block scope
+        }
+
+        document.getElementById("scopeOutput").innerHTML =
+            "var x = " + x +
+            "<br>let y = Block Scoped (not accessible outside block)" +
+            "<br>const z = Block Scoped (not accessible outside block)";
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+//Apply Inline Internal and External CSS styles to HTML element.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Types of CSS</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        h2 {
+            color: blue;
+            text-align: center;
+        }
+        .internal {
+            background-color: lightyellow;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: red; text-align: center;">
+        Inline CSS Example
+    </h1>
+
+    <!-- Internal CSS -->
+    <h2>Internal CSS Example</h2>
+    <p class="internal">
+        This paragraph is styled using internal CSS.
+    </p>
+
+    <!-- External CSS -->
+    <h3 class="external">External CSS Example</h3>
+    <p class="external">
+        This content is styled using external CSS.
+    </p>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+// 19.Create a simple drawing using the <canvas> element: draw shapes and fill colors
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canvas Drawing Example</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        canvas {
+            border: 2px solid black;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Canvas Drawing – Shapes & Colors</h2>
+
+<canvas id="myCanvas" width="400" height="300"></canvas>
+
+<script>
+    // Get canvas and context
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+
+    // ===== Draw Rectangle =====
+    ctx.fillStyle = "lightblue";
+    ctx.fillRect(20, 20, 120, 80);
+
+    // ===== Draw Circle =====
+    ctx.beginPath();
+    ctx.arc(220, 60, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "green";
+    ctx.fill();
+    ctx.closePath();
+
+    // ===== Draw Line =====
+    ctx.beginPath();
+    ctx.moveTo(50, 150);
+    ctx.lineTo(350, 150);
+    ctx.strokeStyle = "red";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+    ctx.closePath();
+
+    // ===== Draw Filled Text =====
+    ctx.fillStyle = "purple";
+    ctx.font = "20px Arial";
+    ctx.fillText("Canvas Drawing", 120, 230);
+</script>
+
+</body>
+</html>

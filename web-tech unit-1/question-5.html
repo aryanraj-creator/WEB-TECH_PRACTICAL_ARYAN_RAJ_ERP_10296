@@ -1,0 +1,83 @@
+//Use semantic elements (<article>,<section>,<nav>,<aside>,<footer>),to build a structured web page.
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Semantic HTML Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header, nav, section, article, aside, footer {
+            border: 1px solid #000;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+        }
+        section {
+            width: 65%;
+            float: left;
+        }
+        aside {
+            width: 25%;
+            float: right;
+        }
+        footer {
+            clear: both;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>My Website</h1>
+        <p>Welcome to my semantic HTML page</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <section>
+        <h2>Main Section</h2>
+
+        <article>
+            <h3>Article 1</h3>
+            <p>
+                This is an article. It represents independent and meaningful content.
+            </p>
+        </article>
+
+        <article>
+            <h3>Article 2</h3>
+            <p>
+                Another article related to the main section content.
+            </p>
+        </article>
+    </section>
+
+    <!-- Sidebar -->
+    <aside>
+        <h3>Aside Content</h3>
+        <p>
+            This is additional information like ads, links, or related content.
+        </p>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 My Website | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
