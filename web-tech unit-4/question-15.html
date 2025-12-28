@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="title">Hello</h2>
+<p class="msg">This is a paragraph</p>
+
+<button onclick="changeText()">Click Me</button>
+
+<script>
+function changeText() {
+ 
+    document.getElementById("title").innerHTML = "Changed using getElementById";
+
+    document.querySelector(".msg").innerHTML = "Changed using querySelector";
+}
+</script>
+
+</body>
+</html>
