@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button id="b">Click</button>
+<p id="p">Press key</p>
+
+<script>
+var b = document.getElementById("b");
+var p = document.getElementById("p");
+
+function msg() { alert("Clicked"); }
+function key() { p.innerHTML = "Key pressed"; }
+
+b.addEventListener("click", msg);
+document.addEventListener("keydown", key);
+
+setTimeout(function () {
+    b.removeEventListener("click", msg);
+}, 3000);
+</script>
+
+</body>
+</html>
