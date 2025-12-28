@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<button onclick="add()">Add</button>
+<button onclick="change()">Change</button>
+<button onclick="remove()">Remove</button>
+
+<ul id="list"></ul>
+
+<script>
+function add() {
+    var li = document.createElement("li");
+    li.innerHTML = "Item";
+    document.getElementById("list").appendChild(li);
+}
+
+function change() {
+    var list = document.getElementById("list");
+    if (list.firstChild)
+        list.firstChild.innerHTML = "Updated Item";
+}
+
+function remove() {
+    var list = document.getElementById("list");
+    if (list.firstChild)
+        list.removeChild(list.firstChild);
+}
+</script>
+
+</body>
+</html>
